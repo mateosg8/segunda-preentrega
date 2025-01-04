@@ -57,3 +57,12 @@ footer p {
   font-size: large;
   text-align: center;
 }
+
+.mainsobrenosotros {
+  text-align: center;
+}
+
+.informacionsobrenosotros {
+  padding: 40px;
+  text-transform: uppercase;
+}
