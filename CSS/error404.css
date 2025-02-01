@@ -1,0 +1,9 @@
+.error{
+    height: 100%;
+    margin-top: 10rem;
+    margin-bottom: 3rem;
+}
+
+.error img{
+    max-width: 100%;
+}
