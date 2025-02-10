@@ -1,0 +1,19 @@
+/* ----------------------- Estilos Página Contacto ----------------------- */
+
+.titulo {
+    margin-top: 9rem;
+  }
+  
+  .btn {
+    background-color: $primary-color;
+    color: #000000;
+    border: $primary-color;
+  
+    &:hover {
+      background-color: $secondary-color;
+      color: $background-color;
+    }
+  }
+  
+  /* ----------------------- Fin Estilos Página Contacto ----------------------- */
+  

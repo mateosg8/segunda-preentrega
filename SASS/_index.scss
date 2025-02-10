@@ -1,0 +1,157 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: $font-family-base;
+    font-weight: 400;
+    font-style: normal;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-size: $font-size-base;
+    background-color: $background-color;
+    min-height: 100vh;
+  }
+  
+  /* --------------------------- ESTILOS HEADER --------------------- */
+  
+  @media (max-width: 991px) {
+    .ocultar {
+      display: none;
+    }
+  }
+  
+  .navbar-nav {
+    align-items: center;
+  }
+  
+  .nav-link {
+    color: $primary-color !important;
+    font-size: 1.5rem !important;
+  
+    &:hover {
+      color: $secondary-color !important;
+      text-decoration: underline;
+    }
+  }
+  
+  .fa-brands {
+    margin: 1rem;
+  }
+  
+  .icon-instagram:hover {
+    color: $accent-color !important;
+  }
+  
+  .icon-facebook:hover {
+    color: $facebook-color !important;
+  }
+  
+  .icon-whatsapp:hover {
+    color: $whatsapp-color !important;
+  }
+  
+  .logos {
+    @include flex-center;
+    flex-direction: row;
+  }
+  
+  /* ----------------------- FIN Estilos HEADER ----------------------- */
+  
+  .carousel-inner {
+    .carousel-item img {
+      height: 614px;
+      object-fit: cover;
+    }
+  
+    .carousel-caption {
+      h5 {
+        font-size: 3rem;
+      }
+  
+      p {
+        font-size: 1.5rem;
+      }
+    }
+  }
+  
+  /* ----------------------INICIO ESTILOS CARDS -------------------- */
+  
+  .card-categorias {
+    position: relative;
+    height: $card-height !important;
+    @include box-shadow;
+    border-radius: 5px;
+    @include transition;
+  
+    &:hover {
+      transform: translateY(-5px);
+      @include box-shadow(0 8px 16px rgba(0, 0, 0, 0.2));
+    }
+
+    .texto-descripcion {
+      position: absolute;
+      bottom: 20px; /* Coloca el texto cerca de la parte inferior de la card */
+      left: 20px;
+      right: 20px;
+      padding: 10px;
+      background-color: rgba(0, 0, 0, 0.6); /* Fondo semi-transparente */
+      color: white;
+      font-size: 1.2rem;
+      display: none; /* Inicialmente oculto */
+      border-radius: 5px;
+      transition: opacity 0.3s ease;
+    }
+  
+    &:hover .texto-descripcion {
+      display: block; /* Mostrar el texto al hacer hover */
+      opacity: 1;
+    }
+  }
+  
+  .card-img {
+    height: 100%;
+    object-fit: cover;
+    opacity: 0.3;
+  }
+  
+  .card-img-overlay {
+    h2 {
+      color: $secondary-color;
+    }
+  }
+  
+  /* ---------------------- Estilos Banner ------------------------ */
+  
+  .fondo {
+    background-color: $banner-background;
+  }
+  
+  .card-banner {
+    border: none !important;
+    background-color: transparent !important;
+    box-shadow: none !important;
+    transition: none !important;
+    &:hover {
+        transform: none !important;
+        box-shadow: none !important;
+      }
+  
+    svg {
+      width: 6rem;
+    }
+  }
+  
+  /* -------------------- FIN estilos banner ------------------- */
+  /* -------------------- Inicio estilos footer ------------------- */
+  
+  footer {
+    background-color: $footer-background;
+    height: 5rem;
+    text-align: center;
+    color: $primary-color;
+    padding-top: 1rem;
+    margin-top: 1rem;
+  }
+  
+  /* ------------------ FIN Estilos footer -------------------------- */

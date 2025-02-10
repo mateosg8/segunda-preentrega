@@ -1,0 +1,28 @@
+/* ------------------ Inicio Estilos Página Accesorios ------------------ */
+.titulo {
+    margin-top: 9rem;
+  }
+  
+  .card {
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    @include box-shadow(0 4px 8px rgba(0, 0, 0, 0.1));
+    @include transition;
+  
+    &:hover {
+      transform: translateY(-5px);
+      @include box-shadow(0 8px 16px rgba(0, 0, 0, 0.2));
+    }
+  }
+  
+  .btn {
+    background-color: $primary-color;
+    color: $footer-background;
+    border: $primary-color;
+  
+    &:hover {
+      background-color: $secondary-color;
+      color: $background-color;
+    }
+  }
+  /* ------------------ Fin Estilos Página Accesorios ------------------ */

@@ -1,227 +1,430 @@
 <!DOCTYPE html>
 <html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content=">Leandro Bader" />
+    <meta
+      name="description"
+      content="Descubre la mejor tienda online de productos de anime. Encuentra figuras, ropa, accesorios y más de tus series favoritas con diseño moderno y responsivo."
+    />
+    <meta
+      name="keywords"
+      content="anime, tienda online, figuras anime, ropa anime, accesorios, ecommerce anime, bootstrap, css, sass, responsive design"
+    />
+    <meta
+      property="og:title"
+      content="Tienda de Anime - Figuras, Ropa y Accesorios"
+    />
+    <meta
+      property="og:description"
+      content="Explora nuestra tienda online de anime con productos increíbles: figuras, ropa, accesorios y más. ¡Todo para los fans del anime!"
+    />
+    <meta
+      property="og:image"
+      content="https://acdn.mitiendanube.com/stores/001/994/720/themes/common/logo-233607866-1641950202-f8b2a0c1e1bc969b09ae4ad6904a6e7b1641950203.png?0"
+    />
+    <meta
+      property="og:url"
+      content="https://leandrobader.github.io/PreEntrega-3-Leandro-Bader/"
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:locale" content="es_ES" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./CSS/styles.css" />
+    <!-- GOOGLE FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Afacad+Flux:wght@100..1000&family=Bangers&display=swap"
+      rel="stylesheet"
+    />
+    <!-- FIN GOOGLE FONTS -->
+    <!-- BOOTSTRAP ICONS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    />
+    <!-- FIN ICONS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <title>Inicio - Tienda Anime</title>
+  </head>
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="author" content=">Leandro Bader" />
-  <meta name="description" content="PreEntrega 2 Desarrollo web" />
-  <meta name="keywords" content="html, css, position, anime, ecommerce, bootstrap, flexbox, grid" />
-  <link rel="stylesheet" href="./CSS/styles.css">
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-  <!-- GOOGLE FONTS -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Afacad+Flux:wght@100..1000&family=Bangers&display=swap"
-    rel="stylesheet">
-  <!-- FIN GOOGLE FONTS -->
-  <!-- BOOTSTRAP ICONS -->
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
-  <!-- FIN ICONS -->
-  <title>Tienda Anime</title>
-</head>
+  <body>
+    <header>
+      <nav
+        class="navbar navbar-expand-lg bg-dark fixed-top"
+        data-bs-theme="dark"
+      >
+        <div class="container-fluid">
+          <a class="navbar-brand d-lg-none" href="index.html"
+            ><img
+              src="./Images/logo.png"
+              alt="Logo"
+              width="100rem"
+              height="100rem"
+          /></a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link links" href="index.html">INICIO</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./Pages/accesorios.html"
+                  >ACCESORIOS</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./Pages/contacto.html">CONTACTO</a>
+              </li>
+            </ul>
+            <div class="me-auto ocultar">
+              <a class="navbar-brand" href="index.html"
+                ><img
+                  src="./Images/logo.png"
+                  alt="Logo"
+                  width="100rem"
+                  height="100rem"
+              /></a>
+            </div>
 
-<body>
+            <ul class="navbar-nav ml-auto mb-2 mb-lg-0 logos d-flex flex-row">
+              <li class="nav-item">
+                <a href="https://www.instagram.com/" target="_blank"
+                  ><i
+                    class="fa-brands fa-instagram fa-2xl icon-instagram"
+                    style="color: #ffffff"
+                  ></i
+                ></a>
+              </li>
+              <li class="nav-item">
+                <a href="https://www.facebook.com/?locale=es_LA" target="_blank"
+                  ><i
+                    class="fa-brands fa-facebook fa-2xl icon-facebook"
+                    style="color: #ffffff"
+                  ></i
+                ></a>
+              </li>
+              <li class="nav-item">
+                <a href="https://www.whatsapp.com/" target="_blank"
+                  ><i
+                    class="fa-brands fa-whatsapp fa-2xl icon-whatsapp"
+                    style="color: #ffffff"
+                  ></i
+                ></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
 
-  <header>
-    <nav class="navbar navbar-expand-lg bg-dark fixed-top" data-bs-theme="dark">
-      <div class="container-fluid">
-        <a class="navbar-brand d-lg-none" href="index.html"><img src="./Images/logo.png" alt="Logo" width="100rem"
-            height="100rem"></a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
-          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
+    <main>
+      <!-- ------------- Carousel ---------------- -->
+      <div id="carouselExampleCaptions" class="carousel slide mt-5">
+        <div class="carousel-indicators">
+          <button
+            type="button"
+            data-bs-target="#carouselExampleCaptions"
+            data-bs-slide-to="0"
+            class="active"
+            aria-current="true"
+            aria-label="Slide 1"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#carouselExampleCaptions"
+            data-bs-slide-to="1"
+            aria-label="Slide 2"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#carouselExampleCaptions"
+            data-bs-slide-to="2"
+            aria-label="Slide 3"
+          ></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="./Images/slider 1.webp" class="d-block w-100" alt="..." />
+            <div class="carousel-caption d-none d-md-block">
+              <h5>VISION</h5>
+              <p>
+                CONECTAR A NUESTRA COMUNIDAD A TRAVES DE NUESTRAS TIENDAS EN
+                LÍNEA Y FISICAS TRAYENDO LO MEJOR DE JAPON
+              </p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="./Images/slider 2.jpg" class="d-block w-100" alt="..." />
+            <div class="carousel-caption d-none d-md-block">
+              <h5>MISION</h5>
+              <p>
+                TELETRANSPORTAR A LOS FANS DEL MANGA Y ANIME A JAPON UNIENDO
+                CULTURA Y TRASCENDIENDO FRONTERAS
+              </p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="./Images/slider 3.jpg" class="d-block w-100" alt="..." />
+          </div>
+        </div>
+        <button
+          class="carousel-control-prev"
+          type="button"
+          data-bs-target="#carouselExampleCaptions"
+          data-bs-slide="prev"
+        >
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
         </button>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-            <li class="nav-item">
-              <a class="nav-link links" href="index.html">INICIO</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="./Pages/accesorios.html">ACCESORIOS</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="./Pages/contacto.html">CONTACTO</a>
-            </li>
-          </ul>
-          <div class="me-auto ocultar">
-            <a class="navbar-brand" href="index.html"><img src="./Images/logo.png" alt="Logo" width="100rem" height="100rem"></a>
-          </div>
-
-          <ul class="navbar-nav ml-auto mb-2 mb-lg-0 logos d-flex flex-row">
-            <li class="nav-item">
-              <a href="https://www.instagram.com/" target="_blank"><i
-                  class="fa-brands fa-instagram fa-2xl icon-instagram" style="color: #ffffff;"></i></a>
-            </li>
-            <li class="nav-item">
-              <a href="https://www.facebook.com/?locale=es_LA" target="_blank"><i class="fa-brands fa-facebook fa-2xl icon-facebook" style="color: #ffffff;"></i></a>
-            </li>
-            <li class="nav-item">
-              <a href="https://www.whatsapp.com/" target="_blank"><i class="fa-brands fa-whatsapp fa-2xl icon-whatsapp" style="color: #ffffff;"></i></a>
-            </li>
-          </ul>
-        </div>
+        <button
+          class="carousel-control-next"
+          type="button"
+          data-bs-target="#carouselExampleCaptions"
+          data-bs-slide="next"
+        >
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
       </div>
-    </nav>
 
-  </header>
+      <!-- ----------- FIN CAROUSEL ------------------ -->
 
-  <main>
-    <!-- ------------- Carousel ---------------- -->
-    <div id="carouselExampleCaptions" class="carousel slide mt-5">
-      <div class="carousel-indicators">
-        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
-          aria-current="true" aria-label="Slide 1"></button>
-        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
-          aria-label="Slide 2"></button>
-        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
-          aria-label="Slide 3"></button>
+      <!-- ------------------SECCION PROMOS ----------------------- -->
+
+      <div class="container mt-4">
+        <h1>LIQUIDACION</h1>
       </div>
-      <div class="carousel-inner">
-        <div class="carousel-item active">
-          <img src="./Images/slider 1.webp" class="d-block w-100" alt="...">
-          <div class="carousel-caption d-none d-md-block">
-            <h5>VISION</h5>
-            <p>CONECTAR A NUESTRA COMUNIDAD A TRAVES DE NUESTRAS TIENDAS EN LÍNEA Y FISICAS TRAYENDO LO MEJOR DE JAPON
-            </p>
-          </div>
-        </div>
-        <div class="carousel-item">
-          <img src="./Images/slider 2.jpg" class="d-block w-100" alt="...">
-          <div class="carousel-caption d-none d-md-block">
-            <h5>MISION</h5>
-            <p>TELETRANSPORTAR A LOS FANS DEL MANGA Y ANIME A JAPON UNIENDO CULTURA Y TRASCENDIENDO FRONTERAS</p>
-          </div>
-        </div>
-        <div class="carousel-item">
-          <img src="./Images/slider 3.jpg" class="d-block w-100" alt="...">
-        </div>
-      </div>
-      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
-        data-bs-slide="prev">
-        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Previous</span>
-      </button>
-      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
-        data-bs-slide="next">
-        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Next</span>
-      </button>
-    </div>
 
-    <!-- ----------- FIN CAROUSEL ------------------ -->
-
-    <!-- ------------------SECCION PROMOS ----------------------- -->
-
-    <div class="container mt-4"><h1>LIQUIDACION</h1></div>  
-
-    <div class="container">
-      <div class="row">
-        <div class="col-sm-4 mt-2 d-flex justify-content-center">
-          <div class="card" style="width: 18rem;">
-            <a href="./Pages/error404.html"><img src="./Images/35OFF.webp" class="card-img-top" alt="..."></a>
-            <div class="card-body">
-              <h3 class="card-text">SALE 35% OFF</h3>
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-4 mt-2 d-flex justify-content-center">
+            <div class="card" style="width: 18rem">
+              <a href="./Pages/error404.html"
+                ><img src="./Images/35OFF.webp" class="card-img-top" alt="..."
+              /></a>
+              <div class="card-body">
+                <h3 class="card-text">SALE 35% OFF</h3>
+              </div>
             </div>
           </div>
-        </div>
-        <div class="col-sm-4 mt-2 d-flex justify-content-center">
-          <div class="card" style="width: 18rem;">
-            <a href="./Pages/error404.html"><img src="./Images/25OFF.webp" class="card-img-top" alt="..."></a>
-            <div class="card-body">
-              <h3 class="card-text">SALE 25% OFF</h3>
+          <div class="col-sm-4 mt-2 d-flex justify-content-center">
+            <div class="card" style="width: 18rem">
+              <a href="./Pages/error404.html"
+                ><img src="./Images/25OFF.webp" class="card-img-top" alt="..."
+              /></a>
+              <div class="card-body">
+                <h3 class="card-text">SALE 25% OFF</h3>
+              </div>
             </div>
           </div>
-        </div>
-        <div class="col-sm-4 mt-2 d-flex justify-content-center">
-          <div class="card" style="width: 18rem;">
-            <a href="./Pages/error404.html"><img src="./Images/15OFF.webp" class="card-img-top" alt="..."></a>
-            <div class="card-body">
-              <h3 class="card-text">SALE 10% OFF</h3>
+          <div class="col-sm-4 mt-2 d-flex justify-content-center">
+            <div class="card" style="width: 18rem">
+              <a href="./Pages/error404.html"
+                ><img src="./Images/15OFF.webp" class="card-img-top" alt="..."
+              /></a>
+              <div class="card-body">
+                <h3 class="card-text">SALE 10% OFF</h3>
+              </div>
             </div>
           </div>
         </div>
       </div>
-    </div>
 
-    <!-- ----------------------FIN SECCION PROMOS __________________________________ -->
+      <!-- ----------------------FIN SECCION PROMOS __________________________________ -->
 
-    <!-- ------------------------INICIO SECCION CATEGORIAS -------------------------- -->
-     <div class="container mt-4"><h1>PRODUCTOS POR CATEGORIA</h1></div>
+      <!-- ------------------------INICIO SECCION CATEGORIAS -------------------------- -->
+      <div class="container mt-4">
+        <h1>PRODUCTOS POR CATEGORIA</h1>
+      </div>
 
-    <div class="container">
-      <div class="row">
-        <div class="col-md-6 mt-5">
-          <a href="./Pages/error404.html"><div class="card text-bg-dark card-categorias">
-            <img src="./Images/cosplayjaponesa.avif" class="card-img" alt="...">
-            <div class="card-img-overlay">
-              <h1 class="card-title">Cosplay</h1>
-            </div>
+      <div class="container">
+        <div class="row">
+          <div
+            class="col-md-6 mt-5"
+            data-aos="fade-up"
+            data-aos-duration="1000"
+          >
+            <a href="./Pages/Cosplay.html"
+              ><div class="card text-bg-dark card-categorias">
+                <img
+                  src="./Images/cosplayjaponesa.avif"
+                  class="card-img"
+                  alt="..."
+                />
+                <div class="card-img-overlay">
+                  <h2 class="card-title">Cosplay</h2>
+                  <div class="texto-descripcion">
+                    <p>
+                      Explora nuestra colección de trajes y accesorios de
+                      cosplay.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </a>
           </div>
-        </a>  
-        </div>
 
-        <div class="col-md-6 mt-5">
-          <a href="./Pages/error404.html"><div class="card text-bg-dark card-categorias">
-            <img src="./Images/figurasjaponesas.jpg" class="card-img" alt="...">
-            <div class="card-img-overlay">
-              <h1 class="card-title">Figuras</h1>
-            </div>
+          <div
+            class="col-md-6 mt-5"
+            data-aos="fade-up"
+            data-aos-duration="1000"
+          >
+            <a href="./Pages/Figuras.html"
+              ><div class="card text-bg-dark card-categorias">
+                <img
+                  src="./Images/figurasjaponesas.jpg"
+                  class="card-img"
+                  alt="..."
+                />
+                <div class="card-img-overlay">
+                  <h2 class="card-title">Figuras</h2>
+                  <div class="texto-descripcion">
+                    <p>
+                      Explora nuestra colección de figuras de tus personajes
+                      favoritos, con detalles impresionantes y diseño único
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </a>
           </div>
-        </a>  
-        </div>
 
-        <div class="col-md-6 mt-5">
-          <a href="./Pages/error404.html"><div class="card text-bg-dark card-categorias">
-            <img src="./Images/indumentariajaponesa.avif" class="card-img" alt="...">
-            <div class="card-img-overlay">
-              <h1 class="card-title">Indumentaria Japonesa</h1>
-            </div>
+          <div
+            class="col-md-6 mt-5"
+            data-aos="fade-up"
+            data-aos-duration="1000"
+          >
+            <a href="./Pages/IndJaponesa.html"
+              ><div class="card text-bg-dark card-categorias">
+                <img
+                  src="./Images/indumentariajaponesa.avif"
+                  class="card-img"
+                  alt="..."
+                />
+                <div class="card-img-overlay">
+                  <h2 class="card-title">Indumentaria Japonesa</h2>
+                  <div class="texto-descripcion">
+                    <p>
+                      Sumérgete en la cultura japonesa con nuestra selección de
+                      kimonos, yukatas y ropa tradicional.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </a>
           </div>
-        </a>  
-        </div>
 
-        <div class="col-md-6 mt-5">
-          <a href="./Pages/error404.html"><div class="card text-bg-dark card-categorias">
-            <img src="./Images/libreriaJaponesa.avif" class="card-img" alt="...">
-            <div class="card-img-overlay">
-              <h1 class="card-title">Libreria Japonesa</h1>
-            </div>
+          <div
+            class="col-md-6 mt-5"
+            data-aos="fade-up"
+            data-aos-duration="1000"
+          >
+            <a href="./Pages/LibreriaJaponesa.html"
+              ><div class="card text-bg-dark card-categorias">
+                <img
+                  src="./Images/libreriaJaponesa.avif"
+                  class="card-img"
+                  alt="..."
+                />
+                <div class="card-img-overlay">
+                  <h2 class="card-title">Libreria Japonesa</h2>
+                  <div class="texto-descripcion">
+                    <p>
+                      Descubre libros, revistas y papelería con la esencia única
+                      del arte y la cultura japonesa.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </a>
           </div>
-        </a>  
-        </div>
 
-        <div class="col-md-6 mt-5">
-          <a href="./Pages/error404.html"><div class="card text-bg-dark card-categorias">
-            <img src="./Images/manganacional.webp" class="card-img" alt="...">
-            <div class="card-img-overlay">
-              <h1 class="card-title">Manga</h1>
-            </div>
+          <div
+            class="col-md-6 mt-5"
+            data-aos="fade-up"
+            data-aos-duration="1000"
+          >
+            <a href="./Pages/Manga.html"
+              ><div class="card text-bg-dark card-categorias">
+                <img
+                  src="./Images/manganacional.webp"
+                  class="card-img"
+                  alt="..."
+                />
+                <div class="card-img-overlay">
+                  <h2 class="card-title">Manga</h2>
+                  <div class="texto-descripcion">
+                    <p>
+                      Encuentra tus series de manga favoritas y nuevas historias
+                      emocionantes directamente desde Japón.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </a>
           </div>
-        </a>  
-        </div>
 
-        <div class="col-md-6 mt-5">
-          <a href="./Pages/error404.html"><div class="card text-bg-dark card-categorias">
-            <img src="./Images/pedidosjapon.jpg" class="card-img" alt="...">
-            <div class="card-img-overlay">
-              <h1 class="card-title">Pedidos a Japon</h1>
-            </div>
+          <div
+            class="col-md-6 mt-5"
+            data-aos="fade-up"
+            data-aos-duration="1000"
+          >
+            <a href="./Pages/PedidosJapon.html"
+              ><div class="card text-bg-dark card-categorias">
+                <img
+                  src="./Images/pedidosjapon.jpg"
+                  class="card-img"
+                  alt="..."
+                />
+                <div class="card-img-overlay">
+                  <h2 class="card-title">Pedidos a Japon</h2>
+                  <div class="texto-descripcion">
+                    <p>
+                      Traemos lo mejor de Japón para ti. Haz tus pedidos
+                      personalizados y nosotros nos encargamos del resto.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </a>
           </div>
-        </a>  
         </div>
       </div>
-    </div>
-    <!-- ------------------------FIN SECCION CATEGORIAS -------------------------- -->
+      <!-- ------------------------FIN SECCION CATEGORIAS -------------------------- -->
 
-    <!-- ------------------------INICIO SECCION BANNER -------------------------- -->
+      <!-- ------------------------INICIO SECCION BANNER -------------------------- -->
 
-    <div class="container-fluid fondo mt-5 mb-5 ocultar">
+      <div class="container-fluid fondo mt-5 mb-5 ocultar">
         <div class="row">
           <div class="col-md-4 d-flex justify-content-center">
-            <div class="card m-5 d-flex align-items-center card-banner" style="width: 18rem;">
-              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M575.8 255.5c0 18-15 32.1-32 32.1l-32 0 .7 160.2c0 2.7-.2 5.4-.5 8.1l0 16.2c0 22.1-17.9 40-40 40l-16 0c-1.1 0-2.2 0-3.3-.1c-1.4 .1-2.8 .1-4.2 .1L416 512l-24 0c-22.1 0-40-17.9-40-40l0-24 0-64c0-17.7-14.3-32-32-32l-64 0c-17.7 0-32 14.3-32 32l0 64 0 24c0 22.1-17.9 40-40 40l-24 0-31.9 0c-1.5 0-3-.1-4.5-.2c-1.2 .1-2.4 .2-3.6 .2l-16 0c-22.1 0-40-17.9-40-40l0-112c0-.9 0-1.9 .1-2.8l0-69.7-32 0c-18 0-32-14-32-32.1c0-9 3-17 10-24L266.4 8c7-7 15-8 22-8s15 2 21 7L564.8 231.5c8 7 12 15 11 24z"/></svg>
+            <div
+              class="card m-5 d-flex align-items-center card-banner"
+              style="width: 18rem"
+            >
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512">
+                <!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+                <path
+                  d="M575.8 255.5c0 18-15 32.1-32 32.1l-32 0 .7 160.2c0 2.7-.2 5.4-.5 8.1l0 16.2c0 22.1-17.9 40-40 40l-16 0c-1.1 0-2.2 0-3.3-.1c-1.4 .1-2.8 .1-4.2 .1L416 512l-24 0c-22.1 0-40-17.9-40-40l0-24 0-64c0-17.7-14.3-32-32-32l-64 0c-17.7 0-32 14.3-32 32l0 64 0 24c0 22.1-17.9 40-40 40l-24 0-31.9 0c-1.5 0-3-.1-4.5-.2c-1.2 .1-2.4 .2-3.6 .2l-16 0c-22.1 0-40-17.9-40-40l0-112c0-.9 0-1.9 .1-2.8l0-69.7-32 0c-18 0-32-14-32-32.1c0-9 3-17 10-24L266.4 8c7-7 15-8 22-8s15 2 21 7L564.8 231.5c8 7 12 15 11 24z"
+                />
+              </svg>
               <div class="card-body">
                 <p class="card-text">Comprá desde cualquier lugar</p>
               </div>
@@ -229,8 +432,16 @@
           </div>
 
           <div class="col-md-4 d-flex justify-content-center ocultar">
-            <div class="card m-5 d-flex align-items-center card-banner" style="width: 18rem;">
-              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M64 32C28.7 32 0 60.7 0 96l0 32 576 0 0-32c0-35.3-28.7-64-64-64L64 32zM576 224L0 224 0 416c0 35.3 28.7 64 64 64l448 0c35.3 0 64-28.7 64-64l0-192zM112 352l64 0c8.8 0 16 7.2 16 16s-7.2 16-16 16l-64 0c-8.8 0-16-7.2-16-16s7.2-16 16-16zm112 16c0-8.8 7.2-16 16-16l128 0c8.8 0 16 7.2 16 16s-7.2 16-16 16l-128 0c-8.8 0-16-7.2-16-16z"/></svg>
+            <div
+              class="card m-5 d-flex align-items-center card-banner"
+              style="width: 18rem"
+            >
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512">
+                <!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+                <path
+                  d="M64 32C28.7 32 0 60.7 0 96l0 32 576 0 0-32c0-35.3-28.7-64-64-64L64 32zM576 224L0 224 0 416c0 35.3 28.7 64 64 64l448 0c35.3 0 64-28.7 64-64l0-192zM112 352l64 0c8.8 0 16 7.2 16 16s-7.2 16-16 16l-64 0c-8.8 0-16-7.2-16-16s7.2-16 16-16zm112 16c0-8.8 7.2-16 16-16l128 0c8.8 0 16 7.2 16 16s-7.2 16-16 16l-128 0c-8.8 0-16-7.2-16-16z"
+                />
+              </svg>
               <div class="card-body">
                 <p class="card-text">Elegi tu medio de pago favorito</p>
               </div>
@@ -238,25 +449,40 @@
           </div>
 
           <div class="col-md-4 d-flex justify-content-center">
-            <div class="card m-5 d-flex align-items-center card-banner" style="width: 18rem;">
-              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512"><!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M256 48c0-26.5 21.5-48 48-48L592 0c26.5 0 48 21.5 48 48l0 416c0 26.5-21.5 48-48 48l-210.7 0c1.8-5 2.7-10.4 2.7-16l0-242.7c18.6-6.6 32-24.4 32-45.3l0-32c0-26.5-21.5-48-48-48l-112 0 0-80zM571.3 347.3c6.2-6.2 6.2-16.4 0-22.6l-64-64c-6.2-6.2-16.4-6.2-22.6 0l-64 64c-6.2 6.2-6.2 16.4 0 22.6s16.4 6.2 22.6 0L480 310.6 480 432c0 8.8 7.2 16 16 16s16-7.2 16-16l0-121.4 36.7 36.7c6.2 6.2 16.4 6.2 22.6 0zM0 176c0-8.8 7.2-16 16-16l352 0c8.8 0 16 7.2 16 16l0 32c0 8.8-7.2 16-16 16L16 224c-8.8 0-16-7.2-16-16l0-32zm352 80l0 224c0 17.7-14.3 32-32 32L64 512c-17.7 0-32-14.3-32-32l0-224 320 0zM144 320c-8.8 0-16 7.2-16 16s7.2 16 16 16l96 0c8.8 0 16-7.2 16-16s-7.2-16-16-16l-96 0z"/></svg>
+            <div
+              class="card m-5 d-flex align-items-center card-banner"
+              style="width: 18rem"
+            >
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512">
+                <!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+                <path
+                  d="M256 48c0-26.5 21.5-48 48-48L592 0c26.5 0 48 21.5 48 48l0 416c0 26.5-21.5 48-48 48l-210.7 0c1.8-5 2.7-10.4 2.7-16l0-242.7c18.6-6.6 32-24.4 32-45.3l0-32c0-26.5-21.5-48-48-48l-112 0 0-80zM571.3 347.3c6.2-6.2 6.2-16.4 0-22.6l-64-64c-6.2-6.2-16.4-6.2-22.6 0l-64 64c-6.2 6.2-6.2 16.4 0 22.6s16.4 6.2 22.6 0L480 310.6 480 432c0 8.8 7.2 16 16 16s16-7.2 16-16l0-121.4 36.7 36.7c6.2 6.2 16.4 6.2 22.6 0zM0 176c0-8.8 7.2-16 16-16l352 0c8.8 0 16 7.2 16 16l0 32c0 8.8-7.2 16-16 16L16 224c-8.8 0-16-7.2-16-16l0-32zm352 80l0 224c0 17.7-14.3 32-32 32L64 512c-17.7 0-32-14.3-32-32l0-224 320 0zM144 320c-8.8 0-16 7.2-16 16s7.2 16 16 16l96 0c8.8 0 16-7.2 16-16s-7.2-16-16-16l-96 0z"
+                />
+              </svg>
               <div class="card-body">
                 <p class="card-text">Recibí tus productos en menos de 48Hs.</p>
               </div>
             </div>
           </div>
         </div>
-    </div>
-  </main>
+      </div>
+    </main>
 
-  <footer>
-    <p>&copy;Todos los derechos reservados</p>
-    <p>Leandro Bader 2024</p>
-  </footer>
-  <script src="https://kit.fontawesome.com/214682a10c.js" crossorigin="anonymous"></script>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
-    crossorigin="anonymous"></script>
-</body>
-
+    <footer>
+      <p>&copy;Todos los derechos reservados</p>
+    </footer>
+    <script
+      src="https://kit.fontawesome.com/214682a10c.js"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+  </body>
 </html>
